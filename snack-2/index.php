@@ -23,3 +23,32 @@ Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato" -->
     </form> 
 </body>
 </html>
+
+<?php 
+    $name = $_GET["name"];
+    $mail = $_GET["mail"];
+    $age = $_GET["age"];
+    
+    if (strlen($name) > 3) {
+       echo "$name";
+    }
+
+    else {
+        echo ' invalid name ';
+    }
+        
+    if (str_contains($mail, "@" )) {
+        echo "$mail";
+     }
+ 
+     else {
+         echo ' invalid mail ';
+     }
+
+     if (is_numeric($age)) {
+        echo "$age";
+     }
+ 
+     else {
+         echo ' invalid age ';
+     }
