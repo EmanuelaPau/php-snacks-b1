@@ -21,7 +21,9 @@ tra "a" e "b" -->
         for($i = $minNum -1 ; $i <= $maxNum -1; $i++) {
             $newArray[] = $array[$i];
         }
-        return $newArray;
+        $array[] = $newArray;
+
+        return $array;
     }
 ?>
 
