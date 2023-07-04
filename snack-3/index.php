@@ -2,14 +2,14 @@
     $arrayLetters =  ['a','b','c','d','e'];
     $arrayNumbers = [1,2,3,4,5];
     
-    mergeArrays($firstArray, $secondArray) {
+    function mergeArrays($firstArray, $secondArray) {
         $mergedArray = [];
 
         for ($i = 0; $i < count($firstArray); $i++) {
             $mergedArray[] = $firstArray[$i];
             $mergedArray[] = $secondArray[$i];
         }
-        return $mergedArray
+        return $mergedArray;
     }
 ?>
 
@@ -21,6 +21,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p><?php var_dump(mergeArrays($arrayLetters,  $arrayNumbers )) ?></p>
+    <p><?php var_dump(mergeArrays($arrayLetters,  $arrayNumbers)) ?></p>
 </body>
 </html>
